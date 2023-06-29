@@ -1,0 +1,24 @@
+﻿@model WeatherModel
+
+<h1>Weather Information</h1>
+
+<form method="post">
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state">
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" required>
+
+    <button type="submit">Get Weather</button>
+</form>
+
+@if (Model != null)
+{
+        <p>Temperature: @Model.Temperature &deg;F</p>
+        <p>Feels Like: @Model.FeelsLike &deg;F</p>
+        <p>Min Temperature: @Model.MinTemperature &deg;F</p>
+        <p>Max Temperature: @Model.MaxTemperature &deg;F</p>
+}
