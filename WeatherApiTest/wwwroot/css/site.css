@@ -128,3 +128,14 @@ p {
     width: 100px; /* Adjust the width as desired */
     height: 100px; /* Adjust the height as desired */
 }
+
+.navbar {
+    background-color: rgba(193, 109, 109, 0.75) !important;
+    font-family: 'Press Start 2P';
+    border-bottom: 2px solid rgba(250, 109, 109) !important;
+}
+
+.navbar-brand {
+    color: #931b1b !important;
+}
+
