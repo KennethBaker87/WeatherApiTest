@@ -7,5 +7,6 @@
         public double MinTemperature { get; set; }
         public double MaxTemperature { get; set; }
         public string City { get; set; }
+        public string Main { get; set; }
     }
 }

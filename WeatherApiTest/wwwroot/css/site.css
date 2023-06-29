@@ -14,5 +14,117 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url('../images/background 2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+    color: #931b1b;
+    font-family: 'Press Start 2P', cursive;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.search-params {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+    .search-params label {
+        text-align: right; /* Align the label text to the right */
+        width: fit-content; /* Set the width to fit the content */
+        margin-right: 10px;
+    }
+
+    .search-params input[type="text"] {
+        width: 50%;
+        padding: 5px;
+        box-sizing: border-box; /* Include padding within the width */
+        background-color: rgba(130, 109, 109, 0.5);
+        border-radius: 10px;
+        font-family: 'Press Start 2P';
+    }
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .search-params label {
+        width: 25%; /* Adjust the width as desired for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+    .search-params label {
+        width: 20%; /* Adjust the width as desired for even smaller screens */
+    }
+}
+
+form {
+    text-align: center;
+}
+
+button[type="submit"] {
+    margin-top: 20px; /* Adjust the top margin as desired */
+    border-radius: 10px;
+    font-family: 'Press Start 2P';
+    color: #931b1b;
+    background-color: #c16d6d;
+    border: solid 2px #931b1b  ;
+}
+label {
+    font-family: 'Press Start 2P';
+    
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.all-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5% 0; /* Adjust the vertical padding as desired */
+    margin:10% 25% 20% 25%; /* Adjust the left and right margin as desired */
+    background-color: rgba(193, 109, 109, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.centered-content {
+    text-align: center;
+}
+
+p {
+    font-family: 'Press Start 2P';
+    
+}
+
+.weather-image {
+    width: 100px; /* Adjust the width as desired */
+    height: 100px; /* Adjust the height as desired */
 }

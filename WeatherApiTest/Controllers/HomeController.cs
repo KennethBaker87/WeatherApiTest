@@ -43,7 +43,8 @@ public class HomeController : Controller
             Temperature = (double)formattedResponse["main"]["temp"],
             FeelsLike = (double)formattedResponse["main"]["feels_like"],
             MinTemperature = (double)formattedResponse["main"]["temp_min"],
-            MaxTemperature = (double)formattedResponse["main"]["temp_max"]
+            MaxTemperature = (double)formattedResponse["main"]["temp_max"],
+            Main = (string)formattedResponse["weather"][0]["main"] // Add the Main property
             // Set other properties as needed
         };
 

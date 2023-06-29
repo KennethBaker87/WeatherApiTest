@@ -1,24 +1,43 @@
-﻿@model WeatherModel
+﻿<div class="all-visual">
+    <div class="centered-content">
+        <h1>Location</h1>
 
-<h1>Weather Information</h1>
+        <form method="post">
+            <div class="search-params">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
 
-<form method="post">
-    <label for="city">City:</label>
-    <input type="text" id="city" name="city" required>
+            <div class="search-params">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state">
+            </div>
 
-    <label for="state">State:</label>
-    <input type="text" id="state" name="state">
+            <div class="search-params">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
 
-    <label for="country">Country:</label>
-    <input type="text" id="country" name="country" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <br/>
 
-    <button type="submit">Get Weather</button>
-</form>
+        @if (Model != null)
+        {
+                        string gifName = Model.Main.ToLower() + ".gif"; // Assuming GIF file names are lowercase
+            string gifPath = $"~/images/{gifName}"; // Adjust the path based on your folder structure
 
-@if (Model != null)
-{
-        <p>Temperature: @Model.Temperature &deg;F</p>
-        <p>Feels Like: @Model.FeelsLike &deg;F</p>
-        <p>Min Temperature: @Model.MinTemperature &deg;F</p>
-        <p>Max Temperature: @Model.MaxTemperature &deg;F</p>
-}
+            <img src="@Url.Content(gifPath)" alt="@Model.Main" class="weather-image" alt="@Model.Main">
+                <source src="@Url.Content(gifPath)" type="image/gif">
+            
+
+
+
+            <p>Main Weather: @Model.Main</p>
+            <p>Temperature: @Model.Temperature &deg;F</p>
+            <p>Feels Like: @Model.FeelsLike &deg;F</p>
+            <p>Min Temperature: @Model.MinTemperature &deg;F</p>
+            <p>Max Temperature: @Model.MaxTemperature &deg;F</p>
+        }
+    </div>
+</div>

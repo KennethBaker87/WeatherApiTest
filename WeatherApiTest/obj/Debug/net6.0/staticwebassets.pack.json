@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\WeatherApiTest.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kenny\\OneDrive\\Desktop\\Repos\\WeatherApiTest\\WeatherApiTest\\wwwroot\\Images\\Background 2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Background 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kenny\\OneDrive\\Desktop\\Repos\\WeatherApiTest\\WeatherApiTest\\wwwroot\\Images\\clear.gif",
+      "PackagePath": "staticwebassets\\Images\\clear.gif"
+    },
+    {
+      "Id": "C:\\Users\\kenny\\OneDrive\\Desktop\\Repos\\WeatherApiTest\\WeatherApiTest\\wwwroot\\Images\\clouds.gif",
+      "PackagePath": "staticwebassets\\Images\\clouds.gif"
+    },
+    {
+      "Id": "C:\\Users\\kenny\\OneDrive\\Desktop\\Repos\\WeatherApiTest\\WeatherApiTest\\wwwroot\\Images\\rain.gif",
+      "PackagePath": "staticwebassets\\Images\\rain.gif"
+    },
+    {
+      "Id": "C:\\Users\\kenny\\OneDrive\\Desktop\\Repos\\WeatherApiTest\\WeatherApiTest\\wwwroot\\Images\\snow.gif",
+      "PackagePath": "staticwebassets\\Images\\snow.gif"
+    },
+    {
+      "Id": "C:\\Users\\kenny\\OneDrive\\Desktop\\Repos\\WeatherApiTest\\WeatherApiTest\\wwwroot\\Images\\thunderstorm.gif",
+      "PackagePath": "staticwebassets\\Images\\thunderstorm.gif"
+    },
+    {
       "Id": "C:\\Users\\kenny\\OneDrive\\Desktop\\Repos\\WeatherApiTest\\WeatherApiTest\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
